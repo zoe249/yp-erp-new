@@ -1,0 +1,165 @@
+.top-button-box {
+  min-width: 160px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 4px 4px 4px 4px;
+  opacity: 1;
+  text-align: center;
+  color: #ffffff;
+  background-color: $blue;
+  font-size: 16px;
+  cursor: pointer;
+
+  .iconfont {
+    margin-right: 6px;
+  }
+}
+// 日期中间-样式
+.date-line {
+  margin: 0px 4px;
+  height: 32px;
+  line-height: 32px;
+  margin-bottom: 18px;
+}
+// 弹层文本框样式
+.my-form-box {
+  .el-form-item__content {
+    width: 270px;
+    flex: none;
+  }
+  .el-form-item__label {
+    white-space: nowrap;
+  }
+  .el-input,
+  .el-select,
+  .el-textarea {
+    width: 100%;
+  }
+}
+.my-form-box2 {
+  .el-form-item__content {
+    width: 180px;
+    flex: none;
+  }
+  .el-form-item__label {
+    white-space: nowrap;
+  }
+  .el-input,
+  .el-select,
+  .el-textarea {
+    width: 100%;
+  }
+}
+// 表格按钮样式
+.table-btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .el-button {
+    margin: 0px !important;
+    padding: 0 !important;
+    color: #558df7 !important;
+  }
+
+  .el-button:not(:last-child) {
+    margin-right: 12px !important;
+  }
+
+  .el-button {
+    &:hover {
+      color: #558df7 !important;
+    }
+    .text:hover {
+      border-bottom: 2px solid $blue !important;
+    }
+
+    .iconfont {
+      margin-right: 5px;
+    }
+  }
+}
+.message-text {
+  color: $blue;
+  font-size: 13px;
+  white-space: nowrap;
+}
+// 更多操作按钮样式修正
+.more-btn-box {
+  flex-direction: column;
+  .el-button:not(:last-child) {
+    margin-right: 0px !important;
+    margin-bottom: 10px !important;
+  }
+  .el-button {
+    .text:hover {
+      border-bottom: 1px solid #558df7 !important;
+    }
+  }
+}
+.el-button.is-plain {
+  color: $--color-primary;
+  border-color: $--color-primary;
+}
+.container-box {
+  height: 100%;
+  overflow-y: hidden;
+  background: #ffffff;
+  border-radius: 6px 6px 6px 6px;
+  padding: 18px;
+  box-sizing: border-box;
+}
+.page-container {
+  background-color: #fff;
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: $default-border-radius;
+}
+
+.text-line {
+  font-size: 14px;
+  color: $blue;
+  border-bottom: 1px solid $blue;
+  cursor: pointer;
+}
+// table 样式
+
+.el-table--border .el-table__cell {
+  border-right: none !important;
+  padding: 6px 0 !important;
+}
+
+.el-table th.el-table__cell > .cell {
+  border-right: 1px solid #ccc;
+  line-height: 22px;
+}
+
+.el-table th.el-table__cell:last-child > .cell {
+  border-right: 0 !important;
+}
+
+.el-table__border-left-patch {
+  width: 0 !important;
+}
+
+.el-table--border::before {
+  top: -1px;
+  left: 0;
+  width: 0 !important;
+  height: 100%;
+}
+
+.el-table--border::after {
+  top: -1px;
+  right: 0;
+  width: 0 !important;
+  height: 100%;
+}
+
+.el-scrollbar__bar.is-vertical {
+  opacity: 1 !important;
+}
+
+// table 滚动条一直显示
+.el-scrollbar__bar.is-horizontal {
+  display: block !important;
+}

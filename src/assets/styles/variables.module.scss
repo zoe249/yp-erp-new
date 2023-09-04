@@ -1,0 +1,93 @@
+// base color
+$blue: #558df7;
+$light-blue: #edf3ff;
+$font-color: #333;
+$red: #c03639;
+$del: #ff554e;
+$pink: #e65d6e;
+$green: #30b08f;
+$tiffany: #4ab7bd;
+$yellow: #fec171;
+$panGreen: #30b08f;
+$gray: #ccc;
+$iconGreen: #65cf8a;
+
+// 默认菜单主题风格
+$nav-menu-color: #dddddd;
+$nav-menu-color-active: #fff;
+$nav-menu-background: #06172c;
+$base-menu-color: #333;
+$base-menu-color-active: #558df7;
+$base-menu-background: #fff;
+$base-logo-title-color: #ffffff;
+$mobile-menu-color: #06172c;
+$mobile-menu-color-active: #030e1c;
+$mobile-menu-text-color: #ddd;
+$mobile-menu-text-color-active: $gray;
+$mobile-menu-background: #06172c;
+
+$base-menu-light-color: rgba(0, 0, 0, 0.7);
+$base-menu-light-background: #ffffff;
+$base-logo-light-title-color: #001529;
+
+$base-sub-menu-background: #1f2d3d;
+$base-sub-menu-hover: #001528;
+$base-sub-menu-background: #030e1c;
+
+
+// 全局样式
+$menuWidth: 180px; // 默认菜单宽度
+$subMenuWidth: 190px; // 子菜单宽度
+$minMenuWidth: 60px; // 折叠后的菜单宽度
+$mainColor: var(--el-color-primary); // 主色
+$asideBgColor: #505050; // 侧边菜单栏背景色
+$headerHeight: 64px;
+$mainMenuActiveColor: #333333; // 主菜单激活背景色
+$subMenuActiveColor: var(--el-fill-color-light); // 子菜单激活背景色
+$menuFontSize: 14px; // 菜单字体大小
+$menuLiHeight: 56px; // 单个菜单高度
+$subMenuLiHeight: 56px; // 单个菜单高度
+$tabsHeight: 40px; // tab的高度
+// 自定义暗色菜单风格
+/**
+$base-menu-color:hsla(0,0%,100%,.65);
+$base-menu-color-active:#fff;
+$base-menu-background:#001529;
+$base-logo-title-color: #ffffff;
+
+$base-menu-light-color:rgba(0,0,0,.70);
+$base-menu-light-background:#ffffff;
+$base-logo-light-title-color: #001529;
+
+$base-sub-menu-hover:#001528;
+*/
+
+$--color-primary: #558df7;
+$--color-success: #67c23a;
+$--color-warning: #e6a23c;
+$--color-danger: #f56c6c;
+$--color-info: #909399;
+
+$base-sidebar-width: 180px;
+$nav-topbar-height: 70px;
+$default-border-radius: 8px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuColor: $base-menu-color;
+  menuLightColor: $base-menu-light-color;
+  menuColorActive: $base-menu-color-active;
+  menuBackground: $base-menu-background;
+  menuLightBackground: $base-menu-light-background;
+  subMenuBackground: $base-sub-menu-background;
+  subMenuHover: $base-sub-menu-hover;
+  sideBarWidth: $base-sidebar-width;
+  logoTitleColor: $base-logo-title-color;
+  logoLightTitleColor: $base-logo-light-title-color;
+  primaryColor: $--color-primary;
+  successColor: $--color-success;
+  dangerColor: $--color-danger;
+  infoColor: $--color-info;
+  warningColor: $--color-warning;
+}

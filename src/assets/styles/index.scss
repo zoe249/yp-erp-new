@@ -1,0 +1,329 @@
+/** 基础通用 **/
+@import './reset-element.scss';
+@import './global.scss';
+html,
+body,
+#app {
+  height: 100%;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+a:focus {
+  outline: none;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0 0 0 / 30%);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0 0 0 / 40%);
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+:root {
+  font-family: PingFang SC-Medium, PingFang SC;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.c-flex,
+.df {
+  display: flex;
+}
+.c-inline-flex {
+  display: inline-flex;
+}
+.c-flex-row {
+  flex-direction: row;
+}
+.c-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.c-flex-col {
+  flex-direction: column;
+}
+.c-flex-col-reverse {
+  flex-direction: column-reverse;
+}
+.c-flex-wrap {
+  flex-wrap: wrap;
+}
+.c-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.c-flex-nowrap {
+  flex-wrap: nowrap;
+}
+.c-flex-1 {
+  flex: 1 1 0%;
+}
+.c-flex-auto {
+  flex: 1 1 auto;
+}
+.c-flex-initial {
+  flex: 0 1 auto;
+}
+.c-flex-none {
+  flex: none;
+}
+.c-justify-start {
+  justify-content: flex-start;
+}
+.c-justify-end {
+  justify-content: flex-end;
+}
+.c-justify-center,
+.jcc {
+  justify-content: center;
+}
+.c-justify-between,
+.jcsb {
+  justify-content: space-between;
+}
+.c-items-start,
+.ais {
+  align-items: flex-start;
+}
+.c-items-end {
+  align-items: flex-end;
+}
+.c-items-center,
+.aic {
+  align-items: center;
+}
+.c-items-baseline {
+  align-items: baseline;
+}
+.c-items-stretch {
+  align-items: stretch;
+}
+.c-vertical-align {
+  vertical-align: middle;
+}
+.pt5 {
+  padding-top: 5px;
+}
+.pr5 {
+  padding-right: 5px;
+}
+.pb5 {
+  padding-bottom: 5px;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb8 {
+  margin-bottom: 8px;
+}
+.mb12 {
+  margin-bottom: 12px;
+}
+.mb18 {
+  margin-bottom: 18px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml12 {
+  margin-left: 12px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+
+.mr12 {
+  margin-right: 12px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.c-font-medium {
+  font-weight: 500;
+}
+.c-font-bold {
+  font-weight: 600;
+}
+// 链接谍有
+.c-link {
+  cursor: pointer;
+  color: $blue;
+  text-decoration: underline;
+  text-underline-position: under;
+  &:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: $blue;
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
